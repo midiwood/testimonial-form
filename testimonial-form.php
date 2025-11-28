@@ -243,9 +243,7 @@ class Testimonial_Form_Plugin {
                         <span class="promo-code">THANKYOU100</span>
                     </div>
                     <p class="thank-you-footnote">
-                        * All reviews are screened before publishing. While we may not post
-                        negative feedback, we will address it privately to improve our offering
-                        and your discount code will remain unaffected.
+                        * All reviews are screened before publishing.
                     </p>
                 </div>
             </div>
