@@ -3,14 +3,14 @@
 }
 
 .thank-you-screen {
-    color: #f6f7fb;
+    color: #f6f7fb !important;
     display: none;
     text-align: center;
     padding: 30px 10px;
 }
 
 .thank-you-screen h2 {
-    color: #f6f7fb;
+    color: #f6f7fb!important;
     font-size: 28px;
     font-weight: 700;
     line-height: 1.3;
