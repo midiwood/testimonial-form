@@ -195,13 +195,15 @@
     background: transparent;
     border: 2px solid transparent;
     border-radius: 8px;
-    color: #ffeb3b;
+    color: #ffeb3b !important;
     font-weight: 700;
     padding: 10px 15px;
     margin-bottom: 8px;
     font-family: inherit;
     transition: border-color 0.3s, background 0.3s;
     text-align: center;
+    opacity: 1 !important;
+    text-shadow: none !important;
 }
 
 .testimonial-form-wrapper .name-input {
