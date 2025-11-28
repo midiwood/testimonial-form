@@ -90,6 +90,17 @@
     justify-content: center;
     gap: 6px;
     margin-bottom: 8px;
+    width: auto !important;
+    background: none !important;
+    position: relative !important;
+}
+
+.star-rating::before,
+.star-rating::after,
+.star-rating span::before,
+.star-rating span::after {
+    content: none !important;
+    display: none !important;
 }
 
 .testimonial-form-wrapper .testimonial-star {
