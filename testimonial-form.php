@@ -236,6 +236,18 @@ class Testimonial_Form_Plugin {
 
                     <button type="submit" class="submit-btn">Submit Testimonial</button>
                 </form>
+                <div id="thankYouScreen" class="thank-you-screen" aria-hidden="true">
+                    <h2>Thank you for giving us your thoughts</h2>
+                    <p class="thank-you-subtitle">Use Promo Code below to get your free gift</p>
+                    <div class="promo-highlight">
+                        <span class="promo-code">THANKYOU100</span>
+                    </div>
+                    <p class="thank-you-footnote">
+                        * All reviews are screened before publishing. While we may not post
+                        negative feedback, we will address it privately to improve our offering
+                        and your discount code will remain unaffected.
+                    </p>
+                </div>
             </div>
         </div>
         <?php

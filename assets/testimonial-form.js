@@ -12,6 +12,7 @@ jQuery(document).ready(function($) {
     const stars = starRating.find('.testimonial-star');
     const nameInput = $('#nameInput');
     const titleInput = $('#titleInput');
+    const thankYouScreen = $('#thankYouScreen');
 
     let uploadedImageId = null;
     let currentRating = 0;
@@ -199,18 +200,17 @@ jQuery(document).ready(function($) {
             },
             success: function(response) {
                 if (response.success) {
-                    successMessage.text('✓ Testimonial submitted successfully! It will be reviewed shortly.').show();
-                    
-                    // Reset form
-                    setTimeout(function() {
-                        form[0].reset();
-                        profilePreview.html('<span class="placeholder">👤</span>');
-                        uploadedImageId = null;
-                        currentRating = 0;
-                        updateStarDisplay();
-                        charCount.text('0');
-                        successMessage.hide();
-                    }, 3000);
+                    successMessage.hide();
+                    errorMessage.hide();
+                    form.addClass('is-hidden');
+                    thankYouScreen.attr('aria-hidden', 'false').fadeIn(200);
+
+                    form[0].reset();
+                    profilePreview.html('<span class="placeholder">👤</span>');
+                    uploadedImageId = null;
+                    currentRating = 0;
+                    updateStarDisplay();
+                    charCount.text('0');
                 } else {
                     errorMessage.text(`⚠ ${response.data.message}`).show();
                 }
