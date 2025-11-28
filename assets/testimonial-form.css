@@ -75,7 +75,7 @@
 }
 
 .star-rating-section {
-    margin-bottom: 0;
+    margin-bottom: 20px;
 }
 
 .star-rating-label {
@@ -241,7 +241,7 @@
     gap: 6px;
     color: #a0aec0;
     font-size: 13px;
-    margin-bottom: 0;
+    margin-bottom: 20px;
 }
 
 .verified-icon {
