@@ -157,7 +157,7 @@
     background: transparent;
     border: 2px solid #3a4a5c;
     border-radius: 12px;
-    color: #e2e8f0;
+    color: #ffffff;
     font-size: 16px;
     font-style: italic;
     padding: 16px;
@@ -175,7 +175,7 @@
 }
 
 .testimonial-input::placeholder {
-    color: #4a5568;
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .char-count {
@@ -230,7 +230,7 @@
 
 .name-input::placeholder,
 .title-input::placeholder {
-    color: #4a5568;
+    color: rgba(255, 235, 59, 0.45);
 }
 
 .verified-badge {
