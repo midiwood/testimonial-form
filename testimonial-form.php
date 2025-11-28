@@ -3,8 +3,8 @@
  * Plugin Name: Testimonial Form Submission
  * Plugin URI: https://midiwood.com
  * Description: Beautiful testimonial form with star ratings that submits to ACF custom post type
- * Version: 1.0.1
- * Author: Your Name
+ * Version: 1.0.2
+ * Author: Richard Vossgatter
  * Author URI: https://midiwood.com
  * License: GPL v2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
