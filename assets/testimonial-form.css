@@ -11,7 +11,7 @@
 .testimonial-card {
     background: #1e2936;
     border-radius: 20px;
-    padding: 40px 35px;
+    padding: 28px 30px;
     max-width: 450px;
     width: 100%;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
@@ -19,7 +19,7 @@
 }
 
 .profile-section {
-    margin-bottom: 25px;
+    margin-bottom: 0;
 }
 
 .profile-preview {
@@ -75,7 +75,7 @@
 }
 
 .star-rating-section {
-    margin-bottom: 25px;
+    margin-bottom: 0;
 }
 
 .star-rating-label {
@@ -182,11 +182,11 @@
     text-align: right;
     color: #718096;
     font-size: 11px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
 }
 
 .name-title-section {
-    margin-bottom: 18px;
+    margin-bottom: 0;
 }
 
 .testimonial-form-wrapper .name-input,
@@ -241,7 +241,7 @@
     gap: 6px;
     color: #a0aec0;
     font-size: 13px;
-    margin-bottom: 18px;
+    margin-bottom: 0;
 }
 
 .verified-icon {
@@ -304,18 +304,18 @@
 .success-message {
     background: #48bb78;
     color: white;
-    padding: 12px;
+    padding: 10px;
     border-radius: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     display: none;
 }
 
 .error-message {
     background: #f56565;
     color: white;
-    padding: 12px;
+    padding: 10px;
     border-radius: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
     display: none;
 }
 
