@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: Testimonial Form Submission
- * Plugin URI: https://yoursite.com
+ * Plugin URI: https://midiwood.com
  * Description: Beautiful testimonial form with star ratings that submits to ACF custom post type
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Your Name
- * Author URI: https://yoursite.com
+ * Author URI: https://midiwood.com
  * License: GPL v2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  */
@@ -16,7 +16,7 @@ if (!defined('ABSPATH')) {
 }
 
 class Testimonial_Form_Plugin {
-    const VERSION = '1.0.0';
+    const VERSION = '1.0.1';
     
     public function __construct() {
         // Register shortcode
