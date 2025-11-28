@@ -110,6 +110,13 @@
     padding: 0 !important;
     margin: 0 !important;
     font-family: Arial, sans-serif !important;
+    position: relative !important;
+}
+
+.testimonial-form-wrapper .testimonial-star::before,
+.testimonial-form-wrapper .testimonial-star::after {
+    content: none !important;
+    display: none !important;
 }
 
 .testimonial-form-wrapper .testimonial-star:hover {

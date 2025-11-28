@@ -16,6 +16,7 @@ if (!defined('ABSPATH')) {
 }
 
 class Testimonial_Form_Plugin {
+    const VERSION = '1.0.0';
     
     public function __construct() {
         // Register shortcode
@@ -146,18 +147,20 @@ class Testimonial_Form_Plugin {
     public function enqueue_assets() {
         global $post;
         if (is_a($post, 'WP_Post') && has_shortcode($post->post_content, 'testimonial_form')) {
+            $style_version = $this->get_asset_version('assets/testimonial-form.css');
             wp_enqueue_style(
                 'testimonial-form-style',
                 plugin_dir_url(__FILE__) . 'assets/testimonial-form.css',
                 array(),
-                '1.0.6'
+                $style_version
             );
             
+            $script_version = $this->get_asset_version('assets/testimonial-form.js');
             wp_enqueue_script(
                 'testimonial-form-script',
                 plugin_dir_url(__FILE__) . 'assets/testimonial-form.js',
                 array('jquery'),
-                '1.0.6',
+                $script_version,
                 true
             );
             
@@ -320,6 +323,15 @@ class Testimonial_Form_Plugin {
             'message' => 'Testimonial submitted successfully!',
             'post_id' => $post_id
         ));
+    }
+
+    private function get_asset_version($relative_path) {
+        $file_path = plugin_dir_path(__FILE__) . ltrim($relative_path, '/');
+        if (file_exists($file_path)) {
+            return filemtime($file_path);
+        }
+
+        return self::VERSION;
     }
 }
 
